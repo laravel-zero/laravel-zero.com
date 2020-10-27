@@ -12,7 +12,7 @@ use Illuminate\Contracts\Foundation\Application;
 
 class DocsController extends Controller
 {
-    protected const DEFAULT_PAGE = 'installation';
+    protected const DEFAULT_PAGE = 'introduction';
     protected const EXCLUDED = ['readme', 'license'];
 
     /**
