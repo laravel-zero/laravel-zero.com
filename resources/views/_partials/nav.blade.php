@@ -15,7 +15,7 @@
         <div class="flex flex-1 justify-end items-center text-right">
             <div id="docsearch"></div>
 
-            <div class="flex">
+            <div class="hidden lg:flex">
                 @include('_partials.nav-items')
             </div>
         </div>
