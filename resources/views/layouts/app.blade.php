@@ -1,6 +1,6 @@
 <x-app-layout layout="base" :title="$attributes->get('title')"
               :description="$attributes->get('description')"
-              class="text-cool-gray-800 leading-normal lg:px-2 font-sans"
+              class="text-cool-gray-800 leading-normal font-sans"
               x-data="AppOffCanvasMenu()">
     <x-slot name="head">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -9,7 +9,9 @@
 
     @include('_partials.nav')
 
-    {{ $slot }}
+    <div class="lg:px-2">
+        {{ $slot }}
+    </div>
 
     <x-slot name="footer">
         {{ $footer ?? '' }}

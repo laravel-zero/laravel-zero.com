@@ -15,7 +15,7 @@
                     <div class="flex flex-wrap justify-center lg:justify-start md:space-x-4 my-8 text-sm uppercase">
                         <a
                             href="/docs/introduction"
-                            class="w-full md:w-auto transition duration-300 bg-blue-500 hover:bg-blue-600 font-semibold tracking-wider text-white hover:text-white rounded-full py-3 px-6"
+                            class="w-full md:w-auto transition duration-200 bg-blue-500 hover:bg-blue-600 font-semibold tracking-wider text-white hover:text-white rounded-full py-3 px-6"
                         >
                             Get Started
                         </a>
@@ -23,7 +23,7 @@
                         <a
                             rel="noopener"
                             href="https://github.com/laravel-zero/laravel-zero"
-                            class="w-full md:w-auto transition duration-300 bg-gray-300 hover:bg-gray-400 text-gray-600 font-semibold tracking-wider rounded-full py-3 px-6 mt-4 md:mt-0"
+                            class="w-full md:w-auto transition duration-200 bg-gray-300 hover:bg-gray-400 hover:text-white text-gray-600  font-semibold tracking-wider rounded-full py-3 px-6 mt-4 md:mt-0"
                             target="_blank"
                         >
                             View on Github
