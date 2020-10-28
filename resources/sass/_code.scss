@@ -18,7 +18,7 @@ pre {
     @apply outline-none;
     @apply text-gray-700;
     &:hover, &:focus, &:active {
-      @apply text-white;
+      @apply text-gray-500;
     }
     svg {
       @apply absolute;
