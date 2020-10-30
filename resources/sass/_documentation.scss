@@ -79,6 +79,36 @@
 	    }
 	}
 
+    table {
+        width: 100%;
+        table-layout: auto;
+        text-align: left;
+        margin-top: 2em;
+        margin-bottom: 2em;
+
+        thead {
+            color: #18181b;
+            font-weight: 600;
+            border-bottom-width: 1px;
+            border-bottom-color: #d4d4d8;
+
+            th {
+                padding: .8em .6em;
+            }
+        }
+
+        tbody {
+            tr {
+                border-bottom-width: 1px;
+                border-bottom-color: #e4e4e7
+            }
+
+            td {
+                padding: .8em .6em;
+            }
+        }
+    }
+
 	.collection-method-list > p {
 	    column-count: 1;
 
