@@ -18,7 +18,7 @@ pre {
     @apply outline-none;
     @apply text-gray-700;
     &:hover, &:focus, &:active {
-      @apply text-white;
+      @apply text-gray-500;
     }
     svg {
       @apply absolute;
@@ -94,8 +94,7 @@ pre {
   display: block;
   overflow-x: auto;
   padding: 1em;
-  background: #211F2F;
-  color: #ffffff;
+  border: 1px solid #eee;
   font-family: "Fira Mono", monospace;
   font-size: 14px;
   line-height: 40px;
