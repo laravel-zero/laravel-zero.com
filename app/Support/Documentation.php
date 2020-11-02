@@ -22,6 +22,11 @@ class Documentation
         return $this->filesystem->exists($this->path($version, "{$page}.md"));
     }
 
+    public function doesntExists(string $version, string $page): bool
+    {
+        return ! $this->exists($version, $page);
+    }
+
     public function getIndex(string $version): ?string
     {
         return $this->cache->remember("docs.{$version}.index", 5, function () use ($version) {
@@ -44,5 +49,4 @@ class Documentation
     {
         return resource_path("docs/{$version}/{$file}");
     }
-
 }

@@ -24,25 +24,24 @@ class DocsController extends Controller
      */
     public function __invoke(Documentation $docs, string $page = null)
     {
+        $defaultVersion = config('site.defaultVersion');
+
         if ($page === null) {
             return redirect()->route('docs', [self::DEFAULT_PAGE]);
         }
 
-        if (! $docs->exists(config('site.defaultVersion'), $page) || in_array($page, self::EXCLUDED)) {
+        if ($docs->doesntExists($defaultVersion, $page) || in_array($page, self::EXCLUDED)) {
             abort(404);
         }
 
-        $index = (new Parsedown())->text($docs->getIndex(config('site.defaultVersion')));
+        $parsedown = new Parsedown;
 
-        $file = $docs->get(config('site.defaultVersion'), $page);
-        $contents = YamlFrontMatter::parse($file);
+        $index = $parsedown->text($docs->getIndex($defaultVersion));
+        $contents = YamlFrontMatter::parse($docs->get($defaultVersion, $page));
+
+        $body = $parsedown->text($contents->body());
         $matter = $contents->matter();
-        $markdown = $contents->body();
 
-        $parsedown = new Parsedown();
-        $body = $parsedown->text($markdown);
-
-
-        return view('docs', compact('body', 'matter', 'markdown', 'page', 'index'));
+        return view('docs', compact('body', 'matter', 'page', 'index'));
     }
 }
