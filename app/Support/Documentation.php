@@ -44,5 +44,4 @@ class Documentation
     {
         return resource_path("docs/{$version}/{$file}");
     }
-
 }
