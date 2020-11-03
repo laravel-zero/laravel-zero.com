@@ -30,7 +30,7 @@ class DocsController extends Controller
             return redirect()->route('docs', [self::DEFAULT_PAGE]);
         }
 
-        if ($docs->doesntExists($defaultVersion, $page) || in_array($page, self::EXCLUDED)) {
+        if (! $docs->exists($defaultVersion, $page) || in_array($page, self::EXCLUDED)) {
             abort(404);
         }
 
