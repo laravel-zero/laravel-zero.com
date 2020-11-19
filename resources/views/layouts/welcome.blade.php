@@ -1,4 +1,4 @@
-<x-app-layout layout="base" :title="$attributes->get('title')">
+<x-app-layout layout="base">
     <x-slot name="head">
         {{ $head ?? '' }}
     </x-slot>

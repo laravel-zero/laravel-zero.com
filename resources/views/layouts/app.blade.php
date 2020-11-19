@@ -1,5 +1,4 @@
-<x-app-layout layout="base" :title="$attributes->get('title')"
-              :description="$attributes->get('description')"
+<x-app-layout layout="base" :title="$title" :description="$description"
               class="text-cool-gray-800 leading-normal font-sans"
               x-data="AppOffCanvasMenu()">
     <x-slot name="head">
