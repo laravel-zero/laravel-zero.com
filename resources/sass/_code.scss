@@ -1,10 +1,10 @@
 p, li, ol {
   code {
+      @apply shadow;
       color: #4a5568;
       font-weight: 300;
       font-size: .75rem;
       padding: .25rem;
-      @apply shadow;
       border-radius: .25rem;
       background-color: #edf2f7;
   }
@@ -12,25 +12,18 @@ p, li, ol {
 
 pre {
   .copyBtn {
-    @apply absolute;
-    @apply right-0;
-    @apply h-6 w-6;
-    @apply outline-none;
-    @apply text-gray-700;
+    @apply absolute right-0 h-6 w-6 outline-none text-gray-700;
+
     &:hover, &:focus, &:active {
       @apply text-gray-500;
     }
     svg {
-      @apply absolute;
-      @apply top-0;
-      @apply right-0;
-      @apply mr-4 mt-5;
+      @apply absolute top-0 right-0 mr-4 mt-5;
     }
   }
-  @apply .flex;
+  @apply flex;
   code {
-    @apply .flex;
-    @apply .flex-1;
+    @apply flex flex-1;
   }
 }
 
@@ -42,7 +35,6 @@ pre {
  */
 /* cyrillic-ext */
 @font-face {
-  @apply .rounded-lg bg-gray-800 mb-12;
   font-family: 'Fira Mono';
   font-style: normal;
   font-weight: 400;

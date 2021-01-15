@@ -1,15 +1,18 @@
-@tailwind base;
-@tailwind components;
+@import 'tailwindcss/base';
 
-// Code syntax highlighting,
-// powered by https://highlightjs.org
-@import '~highlight.js/styles/a11y-light.css';
+@import 'tailwindcss/components';
 
-@import '~@docsearch/css/dist/style.css';
+@import 'tailwindcss/utilities';
 
-@import 'code';
+@import 'highlight.js/styles/a11y-light.css';
+
+@import '@docsearch/css/dist/style.css';
+
 @import 'base';
+@import 'code';
 @import 'navigation';
 @import 'documentation';
 
-@tailwind utilities;
+[x-cloak] {
+    display: none !important;
+}
