@@ -1,23 +1,11 @@
-
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
     purge: {
-        layers: ['utilities', 'base', 'components'],
         content: [
-            './app/**/*.php',
-            './resources/**/*.html',
-            './resources/**/*.js',
-            './resources/**/*.blade.php',
-        ],
-        options: {
-            defaultExtractor: (content) => content.match(/[\w-/.:]+(?<!:)/g) || [],
-            whitelistPatterns: [/-active$/, /-enter$/, /-leave-to$/, /show$/],
-        },
-    },
-    future: {
-        removeDeprecatedGapUtilities: true,
-        purgeLayersByDefault: true,
+            'resources/views/**/*.blade.php',
+            'resources/js/**/*.js',
+        ]
     },
     theme: {
         extend: {
@@ -80,8 +68,6 @@ module.exports = {
         display: ['responsive', 'motion-safe', 'motion-reduce'],
     },
     plugins: [
-        require('@tailwindcss/ui'),
-        require('@tailwindcss/typography'),
         function({ addUtilities }) {
             const newUtilities = {
                 '.transition-fast': {
