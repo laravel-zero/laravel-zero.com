@@ -10,8 +10,7 @@
     "require": {
         "php": "^7.4",
         "ext-json": "*",
-        "ext-simplexml": "*",
-        "blade-ui-kit/blade-ui-kit": "^0.1.1",
+        "ext-simplexml": "*",,
         "erusev/parsedown-extra": "^0.8.1",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
@@ -21,7 +20,6 @@
         "league/commonmark": "^1.5",
         "spatie/yaml-front-matter": "^2.0",
         "symfony/yaml": "^5.1",
-        "voku/html-min": "^4.4"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",
