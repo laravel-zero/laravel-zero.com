@@ -8,7 +8,7 @@
 
         <div class="flex items-center">
             <a href="/" title="{{ config('app.name')}} home" class="inline-flex items-center">
-                <img class="h-8" loading="lazy" src="/assets/img/logo.svg" alt="{{ config('app.name')}} logo" /
+                <img class="h-8" loading="lazy" src="/assets/img/logo.svg" alt="{{ config('app.name')}} logo" />
             </a>
         </div>
 
