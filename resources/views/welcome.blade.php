@@ -1,7 +1,6 @@
-<x-app-layout layout="welcome"
-              class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-900 leading-normal font-sans">
+<x-app-layout layout="welcome" class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-900 leading-normal font-sans">
     <div class="w-full flex-auto">
-        <section class="container max-w-8xl mx-auto py-6 px-6 xl:px-0 xl:py-12">
+        <section class="container mx-auto py-6 px-6 xl:py-12">
             <div class="flex flex-col-reverse mb-10 lg:flex-row lg:mb-24">
                 <div class="mt-8 w-full lg:w-2/5 lg:pr-6 xl:pr-12 text-center lg:text-left">
                     <h1 id="intro-docs-template" class="text-5xl font-bold">
