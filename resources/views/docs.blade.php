@@ -1,5 +1,5 @@
 <x-app-layout layout="app" :title="$matter['title']" :description="$matter['description']">
-    <main role="main" class="w-full flex-auto">
+    <main role="main" class="w-full flex-auto dark:bg-gray-900">
         <section class="documentation">
             <div class="container mx-auto px-4 lg:px-4 xl:px-6 lg:flex lg:flex-row">
 

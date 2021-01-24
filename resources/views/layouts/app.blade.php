@@ -8,7 +8,7 @@
 
     @include('_partials.nav')
 
-    <div class="lg:px-2">
+    <div>
         {{ $slot }}
     </div>
 
