@@ -11,6 +11,7 @@ import docsearch from '@docsearch/js';
 
 import './clipboard';
 import './nav';
+import './darkmode';
 
 // Configure Highlight.js
 hljs.registerLanguage('php', php);

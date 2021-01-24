@@ -4,7 +4,7 @@ body {
 }
 
 a {
-    @apply font-medium no-underline text-blue-600;
+    @apply font-medium no-underline text-blue-600 dark:text-blue-400 hover:underline;
 
     &:hover {
         @apply text-blue-700;
@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-    @apply leading-tight mb-4 mt-8 text-gray-900;
+    @apply leading-tight mb-4 mt-8 text-gray-900 dark:text-white;
 
     &:first-child {
         @apply mt-0;
@@ -70,11 +70,15 @@ ol {
 }
 
 ul {
-    @apply list-disc;
+    @apply list-disc dark:text-gray-200;
+}
+
+table {
+    @apply text-black dark:text-gray-200;
 }
 
 p {
-    @apply my-3;
+    @apply my-3 text-gray-700 dark:text-gray-300;
 
     @screen md {
         @apply my-6;
@@ -83,4 +87,20 @@ p {
 
 ::selection {
     @apply bg-blue-500 text-white;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 7px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    @apply bg-gray-800;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-gray-300;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500;
 }

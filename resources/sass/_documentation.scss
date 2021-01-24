@@ -8,7 +8,7 @@
     ul {
         @apply list-none;
         h2 {
-            @apply px-3 mb-0 text-xs leading-4 font-bold text-gray-400 uppercase tracking-wider;
+            @apply px-3 mb-0 text-xs leading-4 font-bold text-gray-400 dark:text-gray-200 uppercase tracking-wider;
         }
 
         li {
@@ -18,10 +18,10 @@
             }
 
             a {
-                @apply font-system font-normal flex items-center px-3 py-1.5 text-sm leading-5 text-gray-500 rounded-md;
+                @apply font-system font-normal flex items-center px-3 py-1.5 text-sm leading-5 text-gray-500 dark:text-gray-400 rounded-md;
 
                 &:hover, &:focus {
-                    @apply bg-gray-300;
+                    @apply bg-gray-300 no-underline dark:text-gray-800;
                 }
             }
 
@@ -50,7 +50,7 @@
         @apply break-words;
 
         a {
-            @apply text-gray-900 #{!important};
+            @apply text-gray-900 dark:text-white #{!important};
         }
     }
 
@@ -140,7 +140,7 @@
             margin-bottom: .5em;
 
             a {
-                @apply relative text-gray-600 no-underline font-medium;
+                @apply relative text-gray-600 dark:text-gray-400 no-underline font-medium;
                 font-size: .89em;
 
                 &::before {

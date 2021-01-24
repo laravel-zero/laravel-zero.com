@@ -7,6 +7,7 @@ module.exports = {
             'resources/js/**/*.js',
         ]
     },
+    darkMode: 'class', // or 'media' or 'class'
     theme: {
         extend: {
             height: {
@@ -65,7 +66,7 @@ module.exports = {
         borderRadius: ['responsive', 'focus'],
         borderWidth: ['responsive', 'active', 'focus'],
         width: ['responsive', 'focus'],
-        display: ['responsive', 'motion-safe', 'motion-reduce'],
+        display: ['responsive', 'motion-safe', 'motion-reduce', 'dark'],
     },
     plugins: [
         function({ addUtilities }) {

@@ -38,25 +38,28 @@
 </head>
 <body {{ $attributes->except(['title', 'description']) }}>
 
-{{ $slot }}
+    <div class="dark:bg-gray-900">
+        {{ $slot }}
+        
+        {{ $footer ?? "" }}
+        
+        <footer class="bg-gray-800 text-gray-200 text-center text-sm py-4" role="contentinfo">
+            <ul class="flex flex-col md:flex-row justify-center list-none my-0">
+                <li class="md:mr-2">
+                    &copy; <a href="https://laravel-zero.com" class="text-white font-bold hover:text-white"
+                              title="Laravel Zero website">Laravel Zero</a> {{ date('Y') }}.
+                </li>
+        
+                <li>
+                    Built with <a href="https://laravel.com" class="text-white font-bold hover:text-white" title="Laravel">Laravel</a>
+                    and <a href="https://tailwindcss.com" class="text-white font-bold hover:text-white"
+                           title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
+                    Logo by <a href="https://twitter.com/caneco" class="text-white font-bold hover:text-white" title="Caneco">Caneco</a>.
+                </li>
+            </ul>
+        </footer>
+    </div>
 
-{{ $footer ?? "" }}
-
-<footer class="bg-gray-800 text-gray-200 text-center text-sm mt-4 py-4" role="contentinfo">
-    <ul class="flex flex-col md:flex-row justify-center list-none my-0">
-        <li class="md:mr-2">
-            &copy; <a href="https://laravel-zero.com" class="text-white font-bold hover:text-white"
-                      title="Laravel Zero website">Laravel Zero</a> {{ date('Y') }}.
-        </li>
-
-        <li>
-            Built with <a href="https://laravel.com" class="text-white font-bold hover:text-white" title="Laravel">Laravel</a>
-            and <a href="https://tailwindcss.com" class="text-white font-bold hover:text-white"
-                   title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
-            Logo by <a href="https://twitter.com/caneco" class="text-white font-bold hover:text-white" title="Caneco">Caneco</a>.
-        </li>
-    </ul>
-</footer>
 
 @stack('scripts')
 

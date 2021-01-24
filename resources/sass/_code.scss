@@ -1,12 +1,10 @@
 p, li, ol {
   code {
-      @apply shadow;
-      color: #4a5568;
+      @apply shadow text-gray-700 bg-gray-200 dark:text-gray-200 dark:bg-gray-700;
       font-weight: 300;
       font-size: .75rem;
       padding: .25rem;
       border-radius: .25rem;
-      background-color: #edf2f7;
   }
 }
 
