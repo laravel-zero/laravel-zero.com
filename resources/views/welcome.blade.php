@@ -1,5 +1,5 @@
 <x-app-layout layout="welcome" class="flex flex-col justify-between min-h-screen">
-    <div class="w-full flex-auto dark:bg-gray-900 dark:text-gray-200 leading-normal font-sans">
+    <div class="w-full flex-auto leading-normal font-sans">
         <section class="container mx-auto py-6 px-6 xl:py-12">
             <div class="flex flex-col-reverse mb-10 lg:flex-row lg:mb-24">
                 <div class="mt-8 w-full lg:w-2/5 lg:pr-6 xl:pr-12 text-center lg:text-left">
