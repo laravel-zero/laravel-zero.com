@@ -36,7 +36,7 @@
 
     @stack('styles')
 </head>
-<body class="dark" {{ $attributes->except(['title', 'description']) }}>
+<body {{ $attributes->except(['title', 'description']) }}>
 
     <div class="dark:bg-gray-900">
         {{ $slot }}

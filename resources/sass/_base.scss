@@ -91,17 +91,16 @@ p {
 
 .scrollbar::-webkit-scrollbar {
     width: 7px;
-    height: 7px;
 }
 
 .scrollbar::-webkit-scrollbar-track {
-    background: #2d3748;
+    @apply bg-gray-800;
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
-    background: #cbd5e0;
+    @apply bg-gray-300;
 }
 
 .scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #718096;
+    @apply bg-gray-500;
 }
