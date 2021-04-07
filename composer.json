@@ -15,21 +15,21 @@
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-        "laravel/framework": "^8.22",
-        "laravel/tinker": "^2.5",
+        "laravel/framework": "^8.35",
+        "laravel/tinker": "^2.6",
         "league/commonmark": "^1.5",
         "spatie/yaml-front-matter": "^2.0",
         "symfony/yaml": "^5.2"
     },
     "require-dev": {
-        "facade/ignition": "^2.5.8",
+        "facade/ignition": "^2.7",
         "friendsofphp/php-cs-fixer": "^2.17",
-        "fakerphp/faker": "^1.13",
+        "fakerphp/faker": "^1.14",
         "mockery/mockery": "^1.4",
-        "nunomaduro/collision": "^5.2",
+        "nunomaduro/collision": "^5.3",
         "pestphp/pest": "^1.0",
         "pestphp/pest-plugin-laravel": "^1.0.0",
-        "phpunit/phpunit": "^9.5.0"
+        "phpunit/phpunit": "^9.5.4"
     },
     "config": {
         "optimize-autoloader": true,
