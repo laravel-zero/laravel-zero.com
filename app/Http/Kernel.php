@@ -2,7 +2,6 @@
 
 namespace App\Http;
 
-use App\Http\Middleware\HtmlMinify;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
