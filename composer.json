@@ -1,11 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "laravel-zero/laravel-zero.com",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": [
-        "framework",
-        "laravel"
-    ],
+    "description": "The Laravel Zero website",
     "license": "MIT",
     "require": {
         "php": "^7.4|^8.0",
@@ -14,8 +10,8 @@
         "erusev/parsedown-extra": "^0.8.1",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
-        "guzzlehttp/guzzle": "^7.0.1",
-        "laravel/framework": "^8.35",
+        "guzzlehttp/guzzle": "^7.2",
+        "laravel/framework": "^8.42",
         "laravel/tinker": "^2.6",
         "league/commonmark": "^1.5",
         "spatie/yaml-front-matter": "^2.0",
@@ -27,9 +23,8 @@
         "fakerphp/faker": "^1.14",
         "mockery/mockery": "^1.4",
         "nunomaduro/collision": "^5.3",
-        "pestphp/pest": "^1.0",
-        "pestphp/pest-plugin-laravel": "^1.0.0",
-        "phpunit/phpunit": "^9.5.4"
+        "pestphp/pest": "^1.2",
+        "pestphp/pest-plugin-laravel": "^1.0"
     },
     "config": {
         "optimize-autoloader": true,
