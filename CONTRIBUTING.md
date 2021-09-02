@@ -26,13 +26,13 @@ Let's get started
 ### Setup
 
 1. Fork the project
-2. Clone your fork into the by running the following command *with your username placed into the {username} slot*:
+2. Clone your fork by running the following command *with your username placed into the {username} slot*:
 	```bash
-    git clone https://github.com:{username}/pestphp.com-next pest
+    git clone https://github.com/{username}/laravel-zero.com laravel-zero
     ```
 3. CD into the new directory you just created:
     ```bash
-    cd pest
+    cd laravel-zero
     ```
 4. Run the `setup.sh` bin script, which will take all the steps necessary to prepare your local install:
     ```bash
