@@ -8,9 +8,9 @@
         </div>
 
         <div class="flex items-center">
-            <a href="/" title="{{ config('app.name')}} home" class="inline-flex items-center">
-                <img class="h-8 dark:hidden flex" loading="lazy" src="/assets/img/logo-dark.svg" alt="{{ config('app.name')}} logo" />
-                <img class="h-8 hidden dark:flex" loading="lazy" src="/assets/img/logo.svg" alt="{{ config('app.name')}} logo" />
+            <a href="/" title="{{ config('app.name') }} home" class="inline-flex items-center">
+                <img class="h-8 dark:hidden flex" loading="lazy" src="{{ asset('assets/img/logo-dark.svg') }}" alt="{{ config('app.name') }} logo" />
+                <img class="h-8 hidden dark:flex" loading="lazy" src="{{ asset('assets/img/logo.svg') }}" alt="{{ config('app.name') }} logo" />
             </a>
         </div>
 

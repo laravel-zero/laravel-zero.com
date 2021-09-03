@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="mx-auto w-full lg:w-3/5">
-                    <img src="/assets/img/logo-large.png" alt="{{ config('site.name') }} logo">
+                    <img src="{{ asset('assets/img/logo-large.png') }}" alt="{{ config('site.name') }} logo">
                 </div>
             </div>
 
@@ -40,7 +40,7 @@
             <div
                 class="flex flex-col -mx-2 items-center justify-center md:items-start lg:flex-row lg:-mx-4 lg:justify-between">
                 <div class="flex flex-col w-full mb-8 mx-3 px-2 lg:w-1/3">
-                    <img src="/assets/img/icon-stack.svg" class="h-12 w-12" alt="stack icon">
+                    <img src="{{ asset('assets/img/icon-stack.svg') }}" class="h-12 w-12" alt="stack icon">
 
                     <h3 id="intro-laravel" class="uppercase text-lg text-blue-900 dark:text-blue-300 font-bold mt-6 mb-3">
                         Highly modular <br>Framework design
@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="flex flex-col w-full mb-8 mx-3 px-2 lg:w-1/3">
-                    <img src="/assets/img/icon-terminal.svg" class="h-12 w-12"
+                    <img src="{{ asset('assets/img/icon-terminal.svg') }}" class="h-12 w-12"
                          alt="terminal icon">
 
                     <h3 id="intro-markdown" class="uppercase text-lg text-blue-900 dark:text-blue-300 font-bold mt-6 mb-3">
@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="flex flex-col w-full mx-3 px-2 lg:w-1/3">
-                    <img src="/assets/img/icon-window.svg" class="h-12 w-12" alt="window icon">
+                    <img src="{{ asset('assets/img/icon-window.svg') }}" class="h-12 w-12" alt="window icon">
 
                     <h3 id="intro-mix" class="uppercase text-lg text-blue-900 dark:text-blue-300 font-bold mt-6 mb-3">
                         For Artisans<br>100% Open Source
