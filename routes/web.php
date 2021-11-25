@@ -14,8 +14,6 @@ use App\Http\Controllers\DocsController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'welcome');
 
 Route::get('/docs/{page?}', DocsController::class)->name('docs')->where('page', '.*');
