@@ -5,7 +5,9 @@
 
     @include('_partials.welcome.nav')
 
-    {{ $slot }}
+    <main class="flex-1">
+        {{ $slot }}
+    </main>
 
     <x-slot name="footer">
         {{ $footer ?? '' }}

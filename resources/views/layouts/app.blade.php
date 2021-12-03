@@ -1,5 +1,5 @@
 <x-app-layout layout="base" :title="$title" :description="$description"
-              class="text-cool-gray-800 leading-normal font-sans"
+              class="font-sans leading-normal text-cool-gray-800"
               x-data="AppOffCanvasMenu()">
     <x-slot name="head">
         <link rel="preconnect" href="https://fonts.gstatic.com">
