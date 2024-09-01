@@ -1,24 +1,19 @@
 {
     "private": true,
+    "type": "module",
     "scripts": {
-        "dev": "mix",
-        "development": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
-        "hot": "mix watch --hot",
-        "production": "mix --production",
-        "prod": "mix --production"
+        "dev": "vite",
+        "build": "vite build"
     },
     "devDependencies": {
         "@tailwindcss/typography": "^0.4.0",
-        "css-loader": "^5.2",
-        "laravel-mix": "^6.0.16",
-        "postcss": "^8.2.15",
-        "resolve-url-loader": "^3.1.2",
-        "sass": "^1.32.0",
-        "sass-loader": "^11.0.1",
-        "tailwindcss": "^2.0.4",
-        "vue-template-compiler": "^2.6.12"
+        "autoprefixer": "^10.4.20",
+        "laravel-vite-plugin": "^1.0.5",
+        "postcss": "^8.4.42",
+        "resolve-url-loader": "^5.0.0",
+        "sass-embedded": "^1.77.8",
+        "tailwindcss": "^3.4.10",
+        "vite": "^5.4.2"
     },
     "dependencies": {
         "@docsearch/css": "^1.0.0-alpha.28",

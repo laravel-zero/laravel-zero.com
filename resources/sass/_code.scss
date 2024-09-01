@@ -1,28 +1,30 @@
-p, li, ol {
-  code {
-      @apply shadow text-gray-700 bg-gray-200 dark:text-gray-200 dark:bg-gray-700;
-      font-weight: 300;
-      font-size: .75rem;
-      padding: .25rem;
-      border-radius: .25rem;
-  }
-}
-
-pre {
-  .copyBtn {
-    @apply absolute right-0 h-6 w-6 outline-none text-gray-700;
-
-    &:hover, &:focus, &:active {
-      @apply text-gray-500;
+@layer base {
+    p, li, ol {
+        code {
+            @apply shadow text-gray-700 bg-gray-200 dark:text-gray-200 dark:bg-gray-700;
+            font-weight: 300;
+            font-size: .75rem;
+            padding: .25rem;
+            border-radius: .25rem;
+        }
     }
-    svg {
-      @apply absolute top-0 right-0 mr-4 mt-5;
+
+    pre {
+        .copyBtn {
+            @apply absolute right-0 h-6 w-6 outline-none text-gray-700;
+
+            &:hover, &:focus, &:active {
+                @apply text-gray-500;
+            }
+            svg {
+                @apply absolute top-0 right-0 mr-4 mt-5;
+            }
+        }
+        @apply flex;
+        code {
+            @apply flex flex-1;
+        }
     }
-  }
-  @apply flex;
-  code {
-    @apply flex flex-1;
-  }
 }
 
 /*

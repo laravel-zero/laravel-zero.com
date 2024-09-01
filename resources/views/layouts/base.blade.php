@@ -29,10 +29,7 @@
 
     {{ $head ?? '' }}
 
-    <link rel="preload" href="{{ mix('css/app.css') }}" as="style">
-    <link rel="preload" href="{{ mix('js/app.js') }}" as="script">
-
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    @vite('resources/sass/app.scss')
 
     @stack('styles')
 </head>
@@ -40,16 +37,16 @@
 
     <div class="flex flex-col min-h-screen dark:bg-gray-900">
         {{ $slot }}
-        
+
         {{ $footer ?? "" }}
-        
+
         <footer class="py-4 text-sm text-center text-gray-200 bg-gray-800" role="contentinfo">
             <ul class="flex flex-col justify-center my-0 list-none md:flex-row">
                 <li class="md:mr-2">
                     &copy; <a href="https://laravel-zero.com" class="font-bold text-white hover:text-white"
                               title="Laravel Zero website">Laravel Zero</a> {{ date('Y') }}.
                 </li>
-        
+
                 <li>
                     Built with <a href="https://laravel.com" class="font-bold text-white hover:text-white" title="Laravel">Laravel</a>
                     and <a href="https://tailwindcss.com" class="font-bold text-white hover:text-white"
@@ -63,7 +60,7 @@
 
 @stack('scripts')
 
-<script defer src="{{ mix('js/app.js') }}"></script>
+@vite('resources/js/app.js')
 
 @if (app()->environment('production'))
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61404619-3"></script>
