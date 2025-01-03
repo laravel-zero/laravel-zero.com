@@ -8,6 +8,22 @@ export default {
     darkMode: 'class', // or 'media' or 'class'
     theme: {
         extend: {
+            colors: {
+                primary: {
+                    '50': '#f3faf3',
+                    '100': '#e2f6e3',
+                    '200': '#c7ebc9',
+                    '300': '#9bda9f',
+                    '400': '#5bbb61',
+                    '500': '#43a44a',
+                    '600': '#328737',
+                    '700': '#2a6b2e',
+                    '800': '#26552a',
+                    '900': '#214625',
+                    '950': '#0d260f',
+                    DEFAULT: '#43a44a',
+                }
+            },
             height: {
                 'screen-24': 'calc(100vh - 4rem)',
             },
@@ -57,7 +73,7 @@ export default {
                 '4xl': '2.125rem',
                 '5xl': '2.625rem',
                 '6xl': '4rem',
-            },
+            }
         },
     },
     plugins: [
