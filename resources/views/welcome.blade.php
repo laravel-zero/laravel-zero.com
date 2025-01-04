@@ -1,7 +1,7 @@
 <x-app-layout layout="welcome" class="flex flex-col justify-between min-h-screen">
     <div class="w-full flex-auto">
         <div
-            class="absolute inset-0 [background:radial-gradient(circle_at_15%_50%,rgb(212,203,255),rgb(255_255_255/0)25%),radial-gradient(circle_at_85%_30%,rgb(100_244_100/0.25),rgb(255_255_255/0)25%)] opacity-40 from-primary-900 -z-10"></div>
+            class="absolute inset-0 [background:radial-gradient(circle_at_15%_50%,rgb(212,203,255),rgb(255_255_255/0)_25%),radial-gradient(circle_at_85%_30%,rgb(100_244_100/0.25),rgb(255_255_255/0)_25%)] opacity-40 from-primary-900 -z-10"></div>
 
         <section class="container mx-auto py-6 px-6 xl:py-12">
             <div class="max-w-2xl text-center mx-auto py-24 px-5">
