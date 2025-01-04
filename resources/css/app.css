@@ -11,90 +11,19 @@
      */
 
     body {
-        font-size: 17px;
         scroll-behavior: smooth;
     }
 
     a {
-        @apply font-medium no-underline text-blue-600 dark:text-blue-400 hover:underline;
+        @apply font-medium no-underline text-primary-600 dark:text-primary-400 hover:underline;
 
         &:hover {
-            @apply text-blue-700;
+            @apply text-primary-700;
         }
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        @apply leading-tight mb-4 mt-8 text-gray-900 dark:text-white;
-
-        &:first-child {
-            @apply mt-0;
-        }
-    }
-
-    h1 {
-        @apply font-extrabold text-5xl;
-    }
-
-    h2 {
-        @apply font-bold text-4xl;
-    }
-
-    h3 {
-        @apply font-bold text-3xl;
-    }
-
-    h4 {
-        @apply font-normal text-2xl;
-    }
-
-    h5 {
-        @apply font-normal text-xl;
-    }
-
-    h6 {
-        @apply font-light text-lg;
-    }
-
-    hr {
-        @apply border-b border-blue-200 my-12 rounded-full;
-    }
-
-    li {
-        ul,
-        ol {
-            @apply my-0;
-        }
-    }
-
-    ol,
-    ul {
-        @apply my-4;
-    }
-
-    ol {
-        @apply list-decimal;
-        padding-inline-start: 0.3rem;
-    }
-
-    ul {
-        @apply list-disc dark:text-gray-200;
-    }
-
-    table {
-        @apply text-black dark:text-gray-200;
-    }
-
-    p {
-        @apply my-3 text-gray-700 md:my-6 dark:text-gray-300;
     }
 
     ::selection {
-        @apply bg-blue-500 text-white;
+        @apply bg-primary-500 text-white;
     }
 
     .scrollbar::-webkit-scrollbar {
@@ -276,11 +205,19 @@
         h4,
         h5,
         h6 {
-            @apply break-words;
+            @apply break-words leading-tight mb-4 mt-8 text-gray-900 dark:text-white;
+
+            &:first-child {
+                @apply mt-0;
+            }
 
             a {
                 @apply text-gray-900 dark:text-white;
             }
+        }
+
+        h1 {
+            @apply font-extrabold text-5xl;
         }
 
         h2 {
@@ -296,6 +233,8 @@
             }
         }
 
+
+
         h3 {
             @apply font-medium text-3xl;
 
@@ -309,8 +248,49 @@
             }
         }
 
+        h4 {
+            @apply font-normal text-2xl;
+        }
+
+        h5 {
+            @apply font-normal text-xl;
+        }
+
+        h6 {
+            @apply font-light text-lg;
+        }
+
+        hr {
+            @apply border-b border-blue-200 my-12 rounded-full;
+        }
+
+        li {
+            ul,
+            ol {
+                @apply my-0;
+            }
+        }
+
+        ol,
+        ul {
+            @apply my-4;
+        }
+
+        ol {
+            @apply list-decimal;
+            padding-inline-start: 0.3rem;
+        }
+
+        ul {
+            @apply list-disc dark:text-gray-200;
+        }
+
+        table {
+            @apply text-black dark:text-gray-200;
+        }
+
         p {
-            @apply my-2 break-words md:my-5;
+            @apply my-2 md:my-5 text-gray-700 dark:text-gray-300 break-words;
         }
 
         .collection-method-list {
