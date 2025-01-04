@@ -3,9 +3,11 @@
         <section class="documentation">
             <div class="container mx-auto px-4 lg:px-4 xl:px-6 lg:flex lg:flex-row">
 
-                <x-docs.sidebar>
-                    {!! $index !!}
-                </x-docs.sidebar>
+                <div class="lg:min-w-56 lg:min-h-screen">
+                    <x-docs.sidebar>
+                        {!! $index !!}
+                    </x-docs.sidebar>
+                </div>
 
                 <div class="relative docs-main DocSearch-content w-full px-3 lg:ml-10 xl:ml-16 lg:px-0 mt-10 mb-20">
                     <div class="absolute top-0 right-0 h-8 w-100 lg:mt-12 xl:mt-12 hidden lg:block">
