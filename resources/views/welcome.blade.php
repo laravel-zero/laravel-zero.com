@@ -138,7 +138,7 @@
             {{-- Features You'll love section --}}
             <div class="max-w-4xl mx-auto mt-28">
                 <div class="text-center">
-                    <h2 class="font-semibold text-3xl">Features you'll love</h2>
+                    <h2 class="font-semibold text-3xl dark:text-primary-400">Features you'll love</h2>
                     <p class="max-w-md mx-auto mt-2 text-gray-500">
                         Laravel Zero is a lightweight and flexible framework for building powerful console applications, built on top of Laravel.
                     </p>
@@ -153,8 +153,8 @@
                             </span>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-xl">Commands</h3>
-                            <p class="mt-1 text-gray-500">
+                            <h3 class="font-semibold text-xl dark:text-primary-400">Commands</h3>
+                            <p class="mt-1 text-gray-500 dark:text-gray-200">
                                 Build powerful and easy-to-use console commands without breaking a sweat. Using a straightforward syntax that gets the job done quickly.
                             </p>
                         </div>
@@ -168,8 +168,8 @@
                             </span>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-xl">Service Providers</h3>
-                            <p class="mt-1 text-gray-500">
+                            <h3 class="font-semibold text-xl dark:text-primary-400">Service Providers</h3>
+                            <p class="mt-1 text-gray-500 dark:text-gray-200">
                                 Tap into the full power of Laravel by using service providers to easily add more functionality to your application.
                             </p>
                         </div>
@@ -181,8 +181,8 @@
                             </span>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-xl">Database</h3>
-                            <p class="mt-1 text-gray-500">
+                            <h3 class="font-semibold text-xl dark:text-primary-400">Database</h3>
+                            <p class="mt-1 text-gray-500 dark:text-gray-200">
                                 Work with your database like a pro using the DB facade. Whether it’s retrieving data or making changes, it’s simple and hassle-free.
                             </p>
                         </div>
@@ -194,8 +194,8 @@
                             </span>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-xl">Logging</h3>
-                            <p class="mt-1 text-gray-500">
+                            <h3 class="font-semibold text-xl dark:text-primary-400">Logging</h3>
+                            <p class="mt-1 text-gray-500 dark:text-gray-200">
                                 Stay on top of what’s happening in your app with built-in logging. Debug issues, track activity, and keep everything running smoothly.
                             </p>
                         </div>
@@ -207,8 +207,8 @@
                             </span>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-xl">Filesystem</h3>
-                            <p class="mt-1 text-gray-500">
+                            <h3 class="font-semibold text-xl dark:text-primary-400">Filesystem</h3>
+                            <p class="mt-1 text-gray-500 dark:text-gray-200">
                                 Handle files effortlessly. From reading and writing to managing files, Laravel Zero gives you all the tools you need.
                             </p>
                         </div>
@@ -220,15 +220,15 @@
                             </span>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-xl">Desktop notifications</h3>
-                            <p class="mt-1 text-gray-500">
+                            <h3 class="font-semibold text-xl dark:text-primary-400">Desktop notifications</h3>
+                            <p class="mt-1 text-gray-500 dark:text-gray-200">
                                 Make your app stand out by sending friendly desktop notifications that keep users informed in real-time.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="mt-10 text-center">
+                <div class="mt-10 text-center text-gray-800 dark:text-gray-200">
                     Wait, there's more! <a href="/docs" class="text-primary">Check out all features</a>
                 </div>
             </div>
