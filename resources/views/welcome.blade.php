@@ -7,11 +7,11 @@
             <div class="max-w-2xl text-center mx-auto py-24 px-5">
                 <div class="mt-8 w-full text-center">
                     <h1 id="intro-docs-template"
-                        class="text-3xl md:text-6xl font-bold tracking-tight mt-2 dark:text-gray-100">
+                        class="text-3xl md:text-6xl font-bold tracking-tight mt-2 text-gray-900 dark:text-gray-100">
                         Build Your next cli tool with <span class="text-primary">{{ config('site.name') }}</span>
                     </h1>
 
-                    <h2 class="mt-3 text-gray-500 md:text-lg dark:text-gray-200">
+                    <h2 class="mt-3 text-gray-700 md:text-lg dark:text-gray-200">
                         {{ config('site.description') }}
                     </h2>
 
@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="grid md:grid-cols-3 max-w-screen-lg mx-auto gap-10 mt-10">
+            <div class="grid md:grid-cols-3 max-w-screen-lg mx-auto gap-10 lg:mt-10">
                 <div class="flex flex-col w-full mb-8 mx-3 px-2">
                     <div class="flex">
                         <span class="text-primary-600 bg-primary-500/10 p-3 rounded-full">
@@ -47,7 +47,7 @@
                     </div>
 
                     <h3 id="intro-laravel"
-                        class="uppercase text-lg text-primary-700 dark:text-primary-400 font-bold mt-6 mb-3">
+                        class="uppercase text-lg text-gray-800 dark:text-primary-400 font-bold mt-6 mb-3">
                         Highly modular <br>Framework design
                     </h3>
 
@@ -69,7 +69,7 @@
                     </div>
 
                     <h3 id="intro-markdown"
-                        class="uppercase text-lg text-primary-700 dark:text-primary-400 font-bold mt-6 mb-3">
+                        class="uppercase text-lg text-gray-800 dark:text-primary-400 font-bold mt-6 mb-3">
                         Write powerful<br>Console applications
                     </h3>
 
@@ -89,7 +89,7 @@
                     </div>
 
                     <h3 id="intro-mix"
-                        class="uppercase text-lg text-primary-700 dark:text-primary-400 font-bold mt-6 mb-3">
+                        class="uppercase text-lg text-gray-800 dark:text-primary-400 font-bold mt-6 mb-3">
                         For Artisans<br>100% Open Source
                     </h3>
 
@@ -102,14 +102,13 @@
             </div>
 
 
-
-            <div class="grid md:grid-cols-2 max-w-screen-lg mx-auto mt-28 px-5 gap-5">
+            <div class="grid md:grid-cols-2 max-w-screen-lg mx-auto mt-16 lg:mt-28 px-5 gap-5">
                 <div class="flex items-center flex-wrap">
                     <div class="max-w-sm">
                         <span class="text-primary-500 bg-primary-500/10 px-3 py-1 rounded-full text-xs uppercase font-medium tracking-wider">
                             Best cli apps builder ever
                         </span>
-                        <h2 class="uppercase font-semibold text-2xl mt-3 dark:text-primary-400">
+                        <h2 class="uppercase text-2xl mt-3 text-gray-800 dark:text-primary-400 font-bold">
                             Build your next CLI tool faster than ever
                         </h2>
                         <p class="mt-2 text-gray-500 dark:text-gray-200">
@@ -132,12 +131,10 @@
                 </div>
             </div>
 
-
-
             {{-- Features You'll love section --}}
-            <div class="max-w-4xl mx-auto mt-28">
+            <div class="max-w-4xl mx-auto mt-16 lg:mt-28">
                 <div class="text-center">
-                    <h2 class="font-semibold text-3xl dark:text-primary-400">Features you'll love</h2>
+                    <h2 class="font-semibold text-3xl text-gray-800 dark:text-primary-400">Features you'll love</h2>
                     <p class="max-w-md mx-auto mt-2 text-gray-500">
                         Laravel Zero is a lightweight and flexible framework for building powerful console applications, built on top of Laravel.
                     </p>
@@ -152,7 +149,7 @@
                             </span>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-xl dark:text-primary-400">Commands</h3>
+                            <h3 class="font-semibold text-xl text-gray-800 dark:text-primary-400">Commands</h3>
                             <p class="mt-1 text-gray-500 dark:text-gray-200">
                                 Build powerful and easy-to-use console commands without breaking a sweat. Using a straightforward syntax that gets the job done quickly.
                             </p>
@@ -167,7 +164,7 @@
                             </span>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-xl dark:text-primary-400">Service Providers</h3>
+                            <h3 class="font-semibold text-xl text-gray-800 dark:text-primary-400">Service Providers</h3>
                             <p class="mt-1 text-gray-500 dark:text-gray-200">
                                 Tap into the full power of Laravel by using service providers to easily add more functionality to your application.
                             </p>
@@ -180,7 +177,7 @@
                             </span>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-xl dark:text-primary-400">Database</h3>
+                            <h3 class="font-semibold text-xl text-gray-800 dark:text-primary-400">Database</h3>
                             <p class="mt-1 text-gray-500 dark:text-gray-200">
                                 Work with your database like a pro using the DB facade. Whether it’s retrieving data or making changes, it’s simple and hassle-free.
                             </p>
@@ -193,7 +190,7 @@
                             </span>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-xl dark:text-primary-400">Logging</h3>
+                            <h3 class="font-semibold text-xl text-gray-800 dark:text-primary-400">Logging</h3>
                             <p class="mt-1 text-gray-500 dark:text-gray-200">
                                 Stay on top of what’s happening in your app with built-in logging. Debug issues, track activity, and keep everything running smoothly.
                             </p>
@@ -206,7 +203,7 @@
                             </span>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-xl dark:text-primary-400">Filesystem</h3>
+                            <h3 class="font-semibold text-xl text-gray-800 dark:text-primary-400">Filesystem</h3>
                             <p class="mt-1 text-gray-500 dark:text-gray-200">
                                 Handle files effortlessly. From reading and writing to managing files, Laravel Zero gives you all the tools you need.
                             </p>
@@ -219,7 +216,7 @@
                             </span>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-xl dark:text-primary-400">Desktop notifications</h3>
+                            <h3 class="font-semibold text-xl text-gray-800 dark:text-primary-400">Desktop notifications</h3>
                             <p class="mt-1 text-gray-500 dark:text-gray-200">
                                 Make your app stand out by sending friendly desktop notifications that keep users informed in real-time.
                             </p>
