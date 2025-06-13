@@ -46,3 +46,5 @@ codeBlocks.forEach((element, key) => {
     codeElement.id = `clipText-${key}`;
     copyToClipboardBtn.dataset.clipboardTarget = `#${codeElement.id}`;
 });
+
+new ClipboardJS('.copyBtn');

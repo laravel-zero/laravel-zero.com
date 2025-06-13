@@ -29,10 +29,7 @@
 
     {{ $head ?? '' }}
 
-    <link rel="preload" href="{{ mix('css/app.css') }}" as="style">
-    <link rel="preload" href="{{ mix('js/app.js') }}" as="script">
-
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    @vite('resources/css/app.css')
 
     @stack('styles')
 </head>
@@ -40,43 +37,43 @@
 
     <div class="flex flex-col min-h-screen dark:bg-gray-900">
         {{ $slot }}
-        
+
         {{ $footer ?? "" }}
-        
-        <footer class="py-4 text-sm text-center text-gray-200 bg-gray-800" role="contentinfo">
+
+        <footer class="py-4 text-sm text-center text-gray-200 bg-primary-800 mt-auto" role="contentinfo">
             <ul class="flex flex-col justify-center my-0 list-none md:flex-row">
                 <li class="md:mr-2">
-                    &copy; <a href="https://laravel-zero.com" class="font-bold text-white hover:text-white"
+                    &copy; <a href="https://laravel-zero.com" class="font-bold text-white hover:text-white dark:text-white"
                               title="Laravel Zero website">Laravel Zero</a> {{ date('Y') }}.
                 </li>
-        
+
                 <li>
-                    Built with <a href="https://laravel.com" class="font-bold text-white hover:text-white" title="Laravel">Laravel</a>
-                    and <a href="https://tailwindcss.com" class="font-bold text-white hover:text-white"
+                    Built with <a href="https://laravel.com" class="font-bold text-white hover:text-white dark:text-white" title="Laravel">Laravel</a>
+                    and <a href="https://tailwindcss.com" class="font-bold text-white hover:text-white dark:text-white"
                            title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
-                    Logo by <a href="https://twitter.com/caneco" class="font-bold text-white hover:text-white" title="Caneco">Caneco</a>.
+                    Logo by <a href="https://twitter.com/caneco" class="font-bold text-white hover:text-white dark:text-white" title="Caneco">Caneco</a>.
                 </li>
             </ul>
         </footer>
     </div>
 
 
-@stack('scripts')
+    @stack('scripts')
 
-<script defer src="{{ mix('js/app.js') }}"></script>
+    @vite('resources/js/app.js')
 
-@if (app()->environment('production'))
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61404619-3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    @if (app()->environment('production'))
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61404619-3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-        gtag('js', new Date());
-        gtag('config', 'UA-61404619-3');
-    </script>
-@endif
+            gtag('js', new Date());
+            gtag('config', 'UA-61404619-3');
+        </script>
+    @endif
 </body>
 </html>

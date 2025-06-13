@@ -5,7 +5,7 @@ import bash from 'highlight.js/lib/languages/bash';
 import json from 'highlight.js/lib/languages/json';
 import diff from 'highlight.js/lib/languages/diff';
 
-import 'alpinejs';
+import {Alpine} from "alpinejs";
 import { listen } from "quicklink";
 import docsearch from '@docsearch/js';
 
@@ -31,9 +31,13 @@ docsearch({
 });
 
 document.querySelectorAll('pre code').forEach((block) => {
-	hljs.initHighlightingOnLoad();
+	hljs.highlightAll();
 });
 
 window.addEventListener('load', () => {
 	listen();
 });
+
+
+Alpine.start();
+

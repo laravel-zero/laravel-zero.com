@@ -15,7 +15,4 @@
     <x-slot name="footer">
         {{ $footer ?? '' }}
     </x-slot>
-    @push('scripts')
-        <script defer src="{{ mix('js/app.js') }}"></script>
-    @endpush
 </x-app-layout>
