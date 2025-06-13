@@ -2,8 +2,8 @@
 
 namespace App\Support;
 
-use ParsedownExtra;
 use Illuminate\Support\Str;
+use ParsedownExtra;
 
 class Parsedown extends ParsedownExtra
 {

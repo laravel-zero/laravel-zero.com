@@ -12,9 +12,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
-    {
-    }
+    public function register() {}
 
     /**
      * Bootstrap any application services.
@@ -28,6 +26,7 @@ class AppServiceProvider extends ServiceProvider
                 if (is_array($value) || is_object($value)) {
                     return collect($value)->recursive();
                 }
+
                 return $value;
             });
         });

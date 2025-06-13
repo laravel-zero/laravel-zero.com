@@ -2,8 +2,8 @@
 
 namespace App\Support;
 
-use Illuminate\Filesystem\Filesystem;
 use Illuminate\Contracts\Cache\Repository as Cache;
+use Illuminate\Filesystem\Filesystem;
 
 class Documentation
 {
@@ -28,7 +28,7 @@ class Documentation
             $path = $this->path($version, 'documentation.md');
 
             if ($this->exists($version, 'documentation')) {
-                return (new Parsedown())->text($this->filesystem->get($path));
+                return (new Parsedown)->text($this->filesystem->get($path));
             }
 
             return null;

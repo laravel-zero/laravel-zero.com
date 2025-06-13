@@ -8,22 +8,23 @@
         "ext-json": "*",
         "ext-simplexml": "*",
         "erusev/parsedown-extra": "^0.8.1",
-        "fruitcake/laravel-cors": "^2.0",
-        "guzzlehttp/guzzle": "^7.2",
-        "laravel/framework": "^9.19.0",
-        "laravel/tinker": "^2.6",
-        "league/commonmark": "^2.2",
-        "spatie/yaml-front-matter": "^2.0",
-        "symfony/yaml": "^5.2"
+        "fruitcake/laravel-cors": "^2.2",
+        "guzzlehttp/guzzle": "^7.9.3",
+        "laravel/framework": "^9.52.20",
+        "laravel/tinker": "^2.10.1",
+        "league/commonmark": "^2.7",
+        "spatie/yaml-front-matter": "^2.0.9",
+        "symfony/yaml": "^5.4.45"
     },
     "require-dev": {
-        "spatie/laravel-ignition": "^1.0",
-        "friendsofphp/php-cs-fixer": "^3.0",
-        "fakerphp/faker": "^1.14",
-        "mockery/mockery": "^1.4",
-        "nunomaduro/collision": "^6.1",
-        "pestphp/pest": "^1.2",
-        "pestphp/pest-plugin-laravel": "^1.4"
+        "fakerphp/faker": "^1.24.1",
+        "friendsofphp/php-cs-fixer": "^3.75",
+        "laravel/pint": "^1.20",
+        "mockery/mockery": "^1.6.12",
+        "nunomaduro/collision": "^6.4",
+        "pestphp/pest": "^1.23.1",
+        "pestphp/pest-plugin-laravel": "^1.4",
+        "spatie/laravel-ignition": "^1.7"
     },
     "config": {
         "optimize-autoloader": true,
