@@ -16,4 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome');
 
+Route::redirect('/docs/build-a-standalone-application', '/docs/distribute-as-phar');
+
 Route::get('/docs/{page?}', DocsController::class)->name('docs')->where('page', '.*');
