@@ -15,7 +15,7 @@
                         {{ config('site.description') }}
                     </h2>
 
-                    <div class="flex flex-wrap space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 justify-center items-center my-8 text-sm">
+                    <div class="flex flex-wrap space-x-0 sm:space-x-4 space-y-4 justify-center items-center my-8 text-sm">
                         <span class="max-w-full bg-primary-100 flex gap-5 items-center justify-between py-3 px-5 rounded-full">
                             <code id="composer-install-cmd"
                                   class="text-primary-900 text-left whitespace-nowrap overflow-hidden overflow-ellipsis">
