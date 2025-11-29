@@ -69,6 +69,7 @@
         @apply flex;
         code {
             @apply flex flex-1;
+            @apply text-gray-200 bg-gray-900 dark:text-gray-200 dark:bg-gray-800;
         }
     }
 
